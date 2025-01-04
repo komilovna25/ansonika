@@ -18,7 +18,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer className="bg-yellow-50 p-8">
-      <div className="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-8 font-creteRound">
         {/* QUICK LINKS */}
         <div>
           <h3 className="text-lg font-semibold mb-4">QUICK LINKS</h3>
@@ -128,7 +128,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto max-w-6xl mt-8 border-t border-gray-200 pt-4 flex justify-between items-center">
+      <div className="container mx-auto max-w-6xl mt-8 border-t border-gray-200 pt-4 flex justify-between items-center font-creteRound">
 <div className="flex items-center space-x-4">
   {/* language */}
     <Select>

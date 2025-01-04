@@ -1,16 +1,19 @@
-import { ChildProps } from "@/types"
-import Navbar from "./_components/navbar"
-import Footer from "./_components/footer"
+import { ChildProps } from '@/types';
+import Footer from './_components/footer';
+import Navbar from './_components/navbar';
 
-
-function Layout({children}:ChildProps) {
+function Layout({ children }: ChildProps) {
   return (
-    <main>
-    <Navbar/>
-     <div className="container">{children}</div>
-     <Footer/>
+    <main className="grid-layout">
+      <header className="navbar">
+        <Navbar />
+      </header>
+      <section className="content">{children}</section>
+      <footer className="footer">
+        <Footer />
+      </footer>
     </main>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

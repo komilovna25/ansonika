@@ -61,7 +61,15 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
-
+.grid-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+.navbar{
+  padding: 10px 20px;
+}
 @layer base {
   * {
     @apply border-border;

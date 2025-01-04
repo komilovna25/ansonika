@@ -4,15 +4,15 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="w-full h-[10vh] p-2 border-b fixed inset-0 bg-background backdrop-blur-sm z-50">
-      <div className="container max-w-6xl flex items-center justify-between">
+    <div className="w-full h-[10vh] p-2 border-b fixed inset-0 bg-background backdrop-blur-sm z-50 ">
+      <div className="container max-w-6xl  flex items-center justify-between ">
         {/* Logo */}
         <Link href={"/"}>
           <Image src="/images/logo.png" alt="Logo" width={200} height={200} />
         </Link>
 
         {/* Navigation Links */}
-        <div className="gap-8 hidden md:flex">
+        <div className="gap-8 hidden md:flex font-creteRound m-auto">
           {navLinks.map((nav) => (
             <div key={nav.name} className="relative group">
               <Link

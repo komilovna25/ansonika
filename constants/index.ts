@@ -32,7 +32,14 @@ import {
       route: "#",
       icon: ListCollapse,
     },
-    { name: "Other Pages", route: "/other_pages", icon: FileCode2 }, 
+    { name: "Other Pages", 
+      subLinks: [
+        {name: '404 Error', route:'/404 pages' },
+        {name: 'Contact', route: '/contact'},
+        {name: 'Sign In' , route: '/signIn'},
+        {name: 'Sign Up', route: '/signUp'},
+      ]
+    }, 
     { name: "Archive", route: "/archive", icon: FolderArchive }, 
     { name: "Contact", route: "/contact", icon: Contact2 }, 
   ];

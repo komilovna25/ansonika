@@ -1,31 +1,80 @@
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Link } from "lucide-react";
+// import backImage from '/images/home_section_2.png'
+import Image from "next/image";
 
 
 function contactPage() {
   return (
     <div>
+      <div className="relative w-full h-screen">
+        <div className="w-full h-full">
+          <Image src={'/images/home_section_2.jpg'} alt="back_image" width={1400} height={600} className="w-full h-full" />
+        </div>
+        <div className="w-full h-full absolute z-10 bg-[#27272785] top-0 left-0">
+          <div className="h-full w-full flex flex-col gap-4 items-center justify-center">
+            <h5 className="text-7xl font-semibold text-white">Contact FooYes</h5>
+            <h4 className="text-2xl font-bold text-white">A successful restaurant experience</h4>
+          </div>
+          <div className="waves-con">
+          <svg
+            className='waves'
+            xmlns='http://www.w3.org/2000/svg'
+            xmlnsXlink='http://www.w3.org/1999/xlink'
+            viewBox='0 24 150 28'
+            preserveAspectRatio='none'
+            shapeRendering='auto'
+          >
+            <defs>
+              <path
+                id='gentle-wave'
+                d='M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z'
+              />
+            </defs>
+            <g className='parallax'>
+              <use
+                xlinkHref='#gentle-wave'
+                x='48'
+                y='0'
+                fill='rgba(255, 255, 255, 0.433)'
+              />
+              <use
+                xlinkHref='#gentle-wave'
+                x='48'
+                y='3'
+                fill='rgba(255, 255, 255, 0.533)'
+              />
+              <use
+                xlinkHref='#gentle-wave'
+                x='48'
+                y='5'
+                fill='rgba(255, 255, 255, 0.233)'
+              />
+              <use xlinkHref='#gentle-wave' x='48' y='7' fill='#ffffff' />
+            </g>
+          </svg>
+
+          </div>
+        </div>
+      </div>
       <div className="bg-gray-100 w-full h-full py-10">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-center gap-8">
-            {/* Help Center Card */}
+            {/* Card1 */}
             <div className="box-contact bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center w-[55vh] h-100">
               <i className="fa-solid fa-address-card text-4xl text-orange-500 mb-4"></i>
-              {/* <FontAwesomeIcon icon="fa-sharp fa-solid fa-life-ring" /> */}
-              <h2 className="text-2xl font-semibold mb-4">Help Center</h2>
-              <Link href="#0" className="text-blue-600 text-lg font-medium">
-                +94 423-23-221
-              </Link>
+              <h1 className="text-2xl font-semibold mb-4">Help Center</h1>
+              <div className="flex items-center justify-around gap-1">
+                <h2 className="hover:underline cursor-pointer">+94 423-23-221</h2>  -
+                <small className="hover:underline cursor-pointer">help@fooyes.com</small>
+              </div>
               <small className="text-gray-500 mt-2">
                 MON to FRI 9am-6pm SAT 9AM-2PM
               </small>
-            </div>
+               </div>
 
-            {/* Address Card */}
+            {/* Card2 */}
             <div className="box-contact bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center w-[55vh] h-100">
               <i className="fa-solid fa-location-dot text-4xl text-red-500 mb-4"></i>
-              {/* <FontAwesomeIcon icon="fa-solid fa-location-dot" /> */}
               <h2 className="text-2xl font-semibold mb-4">Address</h2>
               <div className="text-gray-700">
                 6th Forrest Ray, London - 1001 UK
@@ -35,14 +84,14 @@ function contactPage() {
               </small>
             </div>
 
-            {/* Submissions Card */}
+            {/* Card3 */}
             <div className="box-contact bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center w-[55vh] h-100">
               <i className="fa-regular fa-cloud text-4xl text-blue-500 mb-4"></i>
-              {/* <FontAwesomeIcon icon="fa-duotone fa-regular fa-cloud" /> */}
               <h2 className="text-2xl font-semibold mb-4">Submissions</h2>
-              <Link href="#0" className="text-blue-600 text-lg font-medium">
-                order@fooyes.com
-              </Link>
+              <div className="flex items-center justify-around gap-1">
+                <h2 className="hover:underline cursor-pointer">+94 423-23-221</h2>  -
+                <small className="hover:underline cursor-pointer">order@fooyes.com</small>
+              </div>
               <small className="text-gray-500 mt-2">
                 MON to FRI 9am-6pm SAT 9AM-2PM
               </small>
@@ -53,11 +102,11 @@ function contactPage() {
 
 {/*  */}
 <div className="mt-10 flex items-center justify-around gap-1 px-4">
-{/* <h1 className="text-4xl font-creteRound mb-4 text-center text-gray-800">
-      Drop Us a Line
-    </h1> */}
+
   <div className="w-2/6">
-   
+  <h1 className="text-4xl  mb-2 text-center text-gray-800">
+      Drop Us a Line
+</h1>
   <div className="flex flex-col space-y-4">
   <input
     type="text"

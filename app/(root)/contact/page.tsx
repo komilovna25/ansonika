@@ -5,6 +5,7 @@ import Image from "next/image";
 
 function contactPage() {
   return (
+
     <div>
       <div className="relative w-full h-screen">
         <div className="w-full h-full">
@@ -150,6 +151,8 @@ function contactPage() {
 
 
     </div>
+   
+
   );
 }
 
